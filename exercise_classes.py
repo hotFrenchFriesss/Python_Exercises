@@ -1,8 +1,8 @@
 # This is a public method and variables
 class Cat:
-    def __init__(self, name, age):
-        self.name = name # Public variable
-        self.age = age # Public variable
+    def __init__(self, name, age): # Constructor
+        self.name = name # Public variable | attribute
+        self.age = age # Public variable | attribute
         
     def meow(self): # Public Method
         print(f"{self.name} is meowing!")
@@ -11,9 +11,9 @@ class Cat:
 
 # This is a protected method and variables
 class Dog:
-    def __init__(self, name, age):
-        self._name = name # Protected variable using one underscore
-        self._age = age # Protected variable using one underscore
+    def __init__(self, name, age): # Constructor
+        self._name = name # Protected variable using one underscore | attribute
+        self._age = age # Protected variable using one underscore | attribute
         
     def bark(self): # Protected Method
         print(f"{self._name} is barking!")
@@ -22,13 +22,13 @@ class Dog:
 
 # This is a private method and variables
 class Human:
-    def __init__(self, name, age):
-        self.__name = name # Private variable using two underscore
-        self.__age = age # Private variable using two underscore
+    def __init__(self, name, age): # Constructor
+        self.__name = name # Private variable using two underscore | attribute
+        self.__age = age # Private variable using two underscore | attribute
         
     def get_info(self): # Private Method
         print(f'My name is ' + my_human.__name, f'and I am {my_human.__age} years old!\n')
-    def focus(self):
+    def focus(self): # Private Method
         print(f'{my_human.__name} is focused!')
 
 # -------------------------------------------------------------------
